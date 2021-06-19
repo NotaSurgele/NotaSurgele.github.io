@@ -37,7 +37,7 @@ function onLoad() {
             document.getElementById('selection').innerHTML +=
             `
                 <div class="obj">
-                    <div class="card" style="height: 15.2vw;">
+                    <div class="card" style="">
                         <img class="card-content" src=${thumbnail} alt="">
                         ${
                             (is_coup_de_coeur == true) ? '<img class="coup-de-coeur" style="width: 15%;" src="./assets/icon-heart.svg">' + `<strong class="coup-de-coeur-text"> Coup de coeur</strong>` : ''
