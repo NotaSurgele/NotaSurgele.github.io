@@ -1,0 +1,186 @@
+@font-face {
+  font-family: Petit Formal Script;
+  src: url("../assets/petit_formal_script/PetitFormalScript-Regular.woff2") format("woff2"), url("../assets/petit_formal_script/PetitFormalScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  overflow: hidden;
+  background-image: url("../assets/background-palmiers.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.immanquables {
+  overflow: auto;
+  padding-left: 20%;
+  padding-top: 0%;
+}
+.immanquables .obj {
+  display: inline;
+  position: relative;
+  border-color: transparent;
+}
+.immanquables .obj .caption {
+  padding-top: 10%;
+  display: inline;
+  position: absolute;
+  left: 32%;
+  right: 90%;
+}
+.immanquables .obj .text {
+  font-size: 3vw;
+  font-family: Petit Formal Script;
+  text-align: left;
+  color: white;
+}
+.immanquables .title {
+  font-family: Roboto;
+  padding-left: 25%;
+  font-size: 2vw;
+}
+.immanquables .photo {
+  padding-left: 3%;
+  width: 20%;
+  height: 20%;
+}
+.immanquables .obj :hover {
+  animation-name: spin;
+  animation-duration: 4s;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.selection {
+  padding-left: 22.5%;
+  padding-bottom: 5%;
+}
+.selection .title {
+  font-family: Roboto;
+  padding-left: 25%;
+  font-size: 2vw;
+  background: url("../assets/logo-ladress.svg") no-repeat;
+  background-position: 73%;
+  width: 40%;
+  height: 40%;
+}
+.selection .obj {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.selection .obj .card {
+  position: relative;
+}
+.selection .obj .card .coup-de-coeur {
+  display: relative;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.selection .obj .card .rectangle {
+  border-radius: 4px 0% 0% 4px;
+  display: relative;
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  height: 10%;
+  width: 30%;
+  background-color: black;
+}
+.selection .obj .card .is_new {
+  display: relative;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+.selection .obj .card .card-content {
+  position: relative;
+  border-radius: 10%;
+  padding-left: 2%;
+  width: 12vw;
+  height: 15vw;
+}
+.selection .caption {
+  top: 95%;
+  left: 30%;
+  position: absolute;
+  text-align: center;
+}
+.selection .caption .text {
+  margin-bottom: 0%;
+  font-size: 1vw;
+  font-family: Roboto;
+}
+.selection .caption .price {
+  margin-top: 5%;
+  padding-right: 0%;
+  font-size: 1vw;
+  font-family: Roboto;
+  color: pink;
+  margin-bottom: 0%;
+}
+
+.selection .obj {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.selection .obj:hover {
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+.coup-de-coeur-text {
+  color: whitesmoke;
+  position: absolute;
+  font-family: Petit Formal Script;
+  font-size: 1vw;
+  top: 8%;
+  left: 30%;
+}
+
+.is_new-text {
+  color: whitesmoke;
+  position: absolute;
+  font-family: Petit Formal Script;
+  font-size: 1vw;
+  top: 83%;
+  left: 30%;
+  border-bottom: 1px solid;
+}
+
+.promo {
+  color: whitesmoke;
+  position: absolute;
+  font-family: Roboto;
+  font-size: 1vw;
+  margin-top: 5%;
+  left: 12%;
+}
+
+.content {
+  position: sticky;
+}
+.content footer {
+  overflow: hidden;
+  position: fixed;
+  left: 0%;
+  margin-top: 35%;
+  width: 200%;
+  height: 40%;
+  background-color: grey;
+  color: grey;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
